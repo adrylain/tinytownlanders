@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cnk11t60dghib"
+path="res://.godot/imported/decor.obj-0cf5d2b4ad131b12e5b7a8c79d632ba3.mesh"
+
+[deps]
+
+files=["res://.godot/imported/decor.obj-0cf5d2b4ad131b12e5b7a8c79d632ba3.mesh"]
+
+source_file="res://models/environment/decor.obj"
+dest_files=["res://.godot/imported/decor.obj-0cf5d2b4ad131b12e5b7a8c79d632ba3.mesh", "res://.godot/imported/decor.obj-0cf5d2b4ad131b12e5b7a8c79d632ba3.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

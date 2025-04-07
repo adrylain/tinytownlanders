@@ -1,0 +1,141 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7opjqw72u2rd"]
+
+[ext_resource type="Script" path="res://scripts/gridcube.gd" id="1_7xgjo"]
+[ext_resource type="ArrayMesh" uid="uid://buhucu6klo0sk" path="res://models/placeholders/waterParticle2.tres" id="2_o1xpp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j3sj7"]
+size = Vector3(4, 3, 4)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jqo4c"]
+emission_shape_offset = Vector3(-1.5, 0.25, 0)
+emission_shape = 3
+emission_box_extents = Vector3(0, 0, 1)
+direction = Vector3(1, 0.25, 0)
+spread = 0.0
+initial_velocity_min = 3.0
+initial_velocity_max = 3.0
+gravity = Vector3(0, -1, 0)
+
+[node name="gridcube" type="Node3D"]
+script = ExtResource("1_7xgjo")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_j3sj7")
+
+[node name="submeshes" type="Node3D" parent="."]
+
+[node name="mesh1" type="Node3D" parent="submeshes"]
+
+[node name="topCase" type="Node3D" parent="submeshes/mesh1"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh1/topCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="bottomCase" type="Node3D" parent="submeshes/mesh1"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh1/bottomCase"]
+
+[node name="waterCase" type="Node3D" parent="submeshes/mesh1"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="submeshes/mesh1/waterCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+
+[node name="mesh2" type="Node3D" parent="submeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 0)
+
+[node name="topCase" type="Node3D" parent="submeshes/mesh2"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh2/topCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="bottomCase" type="Node3D" parent="submeshes/mesh2"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh2/bottomCase"]
+
+[node name="waterCase" type="Node3D" parent="submeshes/mesh2"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="submeshes/mesh2/waterCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+
+[node name="mesh3" type="Node3D" parent="submeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+
+[node name="topCase" type="Node3D" parent="submeshes/mesh3"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh3/topCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="bottomCase" type="Node3D" parent="submeshes/mesh3"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh3/bottomCase"]
+
+[node name="waterCase" type="Node3D" parent="submeshes/mesh3"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="submeshes/mesh3/waterCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+
+[node name="mesh4" type="Node3D" parent="submeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -9, 0)
+
+[node name="topCase" type="Node3D" parent="submeshes/mesh4"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh4/topCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="bottomCase" type="Node3D" parent="submeshes/mesh4"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh4/bottomCase"]
+
+[node name="waterCase" type="Node3D" parent="submeshes/mesh4"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="submeshes/mesh4/waterCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+
+[node name="mesh5" type="Node3D" parent="submeshes"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12, 0)
+
+[node name="topCase" type="Node3D" parent="submeshes/mesh5"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh5/topCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="bottomCase" type="Node3D" parent="submeshes/mesh5"]
+
+[node name="mesh" type="MeshInstance3D" parent="submeshes/mesh5/bottomCase"]
+
+[node name="waterCase" type="Node3D" parent="submeshes/mesh5"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="submeshes/mesh5/waterCase"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+visible = false
+amount = 3
+lifetime = 1.1
+explosiveness = 0.3
+randomness = 0.5
+process_material = SubResource("ParticleProcessMaterial_jqo4c")
+draw_pass_1 = ExtResource("2_o1xpp")
+
+[node name="decor1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="decor2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[node name="building" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+
+[connection signal="add" from="." to="." method="_on_add"]
+[connection signal="addBuilding" from="." to="." method="_on_add_building"]
+[connection signal="addDecor" from="." to="." method="_on_add_decor"]
+[connection signal="changeCubeState" from="." to="." method="_on_change_cube_state"]
+[connection signal="getNeighbors" from="." to="." method="_on_get_neighbors"]
+[connection signal="remove" from="." to="." method="_on_remove"]
+[connection signal="rotateVector" from="." to="." method="_on_rotate_vector"]
+[connection signal="setHeight" from="." to="." method="_on_set_height"]

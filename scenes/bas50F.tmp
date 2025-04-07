@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://gxm10xypj6ku"]
+
+[ext_resource type="Script" path="res://scripts/gridmanager.gd" id="1_h8ma3"]
+[ext_resource type="PackedScene" uid="uid://b7opjqw72u2rd" path="res://scenes/gridcube.tscn" id="2_y8ux2"]
+[ext_resource type="Script" path="res://scripts/camera.gd" id="3_lcgew"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4b60b"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wq2a5"]
+material = SubResource("StandardMaterial3D_4b60b")
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="base" type="Node3D"]
+
+[node name="grid" type="Node3D" parent="."]
+script = ExtResource("1_h8ma3")
+gridcube = ExtResource("2_y8ux2")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.707107, 0.353553, -0.612373, 0, 0.866025, 0.5, 0.707107, 0.353553, -0.612372, -5, 20, -5)
+script = ExtResource("3_lcgew")
+
+[node name="raycast" type="RayCast3D" parent="Camera3D"]
+
+[node name="indicator" type="MeshInstance3D" parent="Camera3D/raycast"]
+mesh = SubResource("BoxMesh_wq2a5")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.965926, 0.12941, -0.224144, 0, 0.866025, 0.5, 0.258819, 0.482963, -0.836516, 0, 0, 0)
+
+[connection signal="generateMap" from="grid" to="grid" method="_generate_map"]
+[connection signal="getNeighbors" from="grid" to="grid" method="_on_get_neighbors"]
+[connection signal="reset" from="grid" to="grid" method="_ready"]
+[connection signal="smoothPass1" from="grid" to="grid" method="_smooth_map_1"]

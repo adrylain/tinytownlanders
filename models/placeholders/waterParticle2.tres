@@ -1,0 +1,38 @@
+[gd_resource type="ArrayMesh" load_steps=3 format=4 uid="uid://buhucu6klo0sk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xd0vw"]
+resource_name = "Material"
+cull_mode = 2
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qk6i3"]
+_surfaces = [{
+"aabb": AABB(-0.1875, 0, -0.125, 0.375, 0.0625, 0.25),
+"format": 34359742465,
+"index_count": 12,
+"index_data": PackedByteArray("AgADAAAAAAAEAAIAAgAEAAEAAgABAAMA"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 5,
+"vertex_data": PackedByteArray("//8/PgAAAAAAAACA//8/vgAAAAAAAACAAAAAAAAAgD0AAACAAAAAAAAAAAD+//+9AAAAAAAAAAD+//89")
+}]
+blend_shape_mode = 0
+
+[resource]
+resource_name = "waterParticle_Cube"
+_surfaces = [{
+"aabb": AABB(-0.1875, 0, -0.125, 0.375, 0.0625, 0.25),
+"attribute_data": PackedByteArray("AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/"),
+"format": 34359742487,
+"index_count": 12,
+"index_data": PackedByteArray("BgAJAAAAAQALAAcABQAKAAMABAACAAgA"),
+"material": SubResource("StandardMaterial3D_xd0vw"),
+"name": "Material",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("//8/PgAAAAAAAACA//8/PgAAAAAAAACA//8/vgAAAAAAAACA//8/vgAAAAAAAACAAAAAAAAAgD0AAACAAAAAAAAAgD0AAACAAAAAAAAAgD0AAACAAAAAAAAAgD0AAACAAAAAAAAAAAD+//+9AAAAAAAAAAD+//+9AAAAAAAAAAD+//89AAAAAAAAAAD+//89Lbq56P///z9Fl9DF////P9FFuej///8/uWjQxf///z/RRbno////P7lo0MX///8/Lbq56P///z9Fl9DF////P9FFuej///8/Lbq56P///z+5aNDF////P0WX0MX///8/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_qk6i3")

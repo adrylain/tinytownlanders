@@ -1,0 +1,449 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvpiysqcckqy5"]
+
+[ext_resource type="Script" path="res://scenes/settings/settings_menu.gd" id="1_wg2ws"]
+
+[node name="settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wg2ws")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.722222
+anchor_top = 0.0987654
+anchor_right = 0.722222
+anchor_bottom = 0.0987654
+offset_right = 256.0
+offset_bottom = 24.0
+text = "Settings Menu"
+metadata/_edit_use_anchors_ = true
+
+[node name="backButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.722
+anchor_top = 0.197148
+anchor_right = 0.722
+anchor_bottom = 0.198
+offset_left = 0.25592
+offset_top = 0.247999
+offset_right = 256.256
+offset_bottom = 63.696
+text = "Back"
+metadata/_edit_use_anchors_ = true
+
+[node name="openKeybinds" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.722
+anchor_top = 0.394679
+anchor_right = 0.722
+anchor_bottom = 0.394889
+offset_left = 0.25592
+offset_top = 0.247986
+offset_right = 256.256
+offset_bottom = 64.112
+text = "Open Keybinds"
+metadata/_edit_use_anchors_ = true
+
+[node name="musicSlider" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.722
+anchor_top = 0.642296
+anchor_right = 0.944
+anchor_bottom = 0.642296
+offset_left = 0.25592
+offset_top = -0.208023
+offset_right = 0.511963
+offset_bottom = 31.792
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="musicSlider"]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.03125
+offset_left = 6.10352e-05
+offset_top = -24.0
+offset_right = 128.0
+offset_bottom = -1.0
+text = "Music Volume"
+metadata/_edit_use_anchors_ = true
+
+[node name="sfxSlider" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.722
+anchor_top = 0.740444
+anchor_right = 0.944
+anchor_bottom = 0.740444
+offset_left = 0.25592
+offset_top = 0.192001
+offset_right = 0.511963
+offset_bottom = 32.192
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="sfxSlider"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_top = -24.0
+offset_right = -128.0
+text = "SFX Volume"
+metadata/_edit_use_anchors_ = true
+
+[node name="keybinds" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.0555556
+anchor_top = 0.0987654
+anchor_right = 0.277334
+anchor_bottom = 0.69174
+offset_right = 0.511963
+offset_bottom = -0.248047
+metadata/_edit_use_anchors_ = true
+
+[node name="labels" type="Control" parent="keybinds"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.667
+offset_bottom = -0.128021
+color = Color(0.241156, 0.241156, 0.241156, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="keybinds/labels"]
+layout_mode = 0
+offset_top = 8.0
+offset_right = 94.0
+offset_bottom = 31.0
+text = "Key bindings
+"
+
+[node name="key1" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_top = 8.0
+offset_right = 42.0
+offset_bottom = 31.0
+text = "Key 1"
+
+[node name="key2" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_right = 0.75
+offset_left = -1.52588e-05
+offset_top = 8.0
+offset_right = 42.0
+offset_bottom = 31.0
+text = "Key 2"
+metadata/_edit_use_anchors_ = true
+
+[node name="up" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.1
+anchor_bottom = 0.1
+offset_top = 1.60001
+offset_right = 94.0
+offset_bottom = 25.6
+text = "UP"
+
+[node name="down" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.167
+anchor_bottom = 0.167
+offset_top = 7.87201
+offset_right = 94.0
+offset_bottom = 31.872
+text = "DOWN"
+metadata/_edit_use_anchors_ = true
+
+[node name="left" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.271
+anchor_bottom = 0.271
+offset_top = -0.0640182
+offset_right = 94.0
+offset_bottom = 23.936
+text = "LEFT"
+metadata/_edit_use_anchors_ = true
+
+[node name="right" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.333333
+anchor_bottom = 0.333333
+offset_top = 8.0
+offset_right = 94.0
+offset_bottom = 32.0
+text = "RIGHT"
+metadata/_edit_use_anchors_ = true
+
+[node name="SelectNext" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.416667
+anchor_bottom = 0.417
+offset_top = 8.0
+offset_right = 102.0
+offset_bottom = 31.872
+text = "SELECT/NEXT"
+metadata/_edit_use_anchors_ = true
+
+[node name="BackPause" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 8.0
+offset_right = 180.0
+offset_bottom = 64.0
+text = "BACK/PAUSE/
+DESELECT"
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.666667
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.241156, 0.241156, 0.241156, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.667
+anchor_bottom = 0.667
+offset_top = 7.87198
+offset_right = 122.0
+offset_bottom = 31.872
+text = "Mouse bindings
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="SelectNext2" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.75
+anchor_bottom = 0.750333
+offset_top = 8.0
+offset_right = 102.0
+offset_bottom = 31.872
+text = "SELECT/NEXT"
+
+[node name="BackPause2" type="Label" parent="keybinds/labels"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.833333
+anchor_bottom = 0.833333
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 32.0
+text = "BACK/DESELECT"
+
+[node name="buttons" type="Control" parent="keybinds"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="up1" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.104167
+anchor_right = 0.5
+anchor_bottom = 0.104167
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="up2" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.104167
+anchor_right = 0.75
+anchor_bottom = 0.104167
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="down1" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.1875
+anchor_right = 0.5
+anchor_bottom = 0.1875
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="down2" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.1875
+anchor_right = 0.75
+anchor_bottom = 0.1875
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="left1" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.270833
+anchor_right = 0.5
+anchor_bottom = 0.270833
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="left2" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.270833
+anchor_right = 0.75
+anchor_bottom = 0.270833
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="right1" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.354167
+anchor_right = 0.5
+anchor_bottom = 0.354167
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="right2" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.354167
+anchor_right = 0.75
+anchor_bottom = 0.354167
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="next1" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.4375
+anchor_right = 0.5
+anchor_bottom = 0.4375
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="next2" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.4375
+anchor_right = 0.75
+anchor_bottom = 0.4375
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="next3" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.770833
+anchor_right = 0.5
+anchor_bottom = 0.770833
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="next4" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.770833
+anchor_right = 0.75
+anchor_bottom = 0.770833
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="back1" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.520833
+anchor_right = 0.5
+anchor_bottom = 0.520833
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="back2" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.520833
+anchor_right = 0.75
+anchor_bottom = 0.520833
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="back3" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.854167
+anchor_right = 0.5
+anchor_bottom = 0.854167
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[node name="back4" type="Button" parent="keybinds/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.854167
+anchor_right = 0.75
+anchor_bottom = 0.854167
+offset_right = 48.0
+offset_bottom = 24.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="backButton" to="." method="_on_back_button_button_down"]
+[connection signal="button_down" from="openKeybinds" to="." method="_on_open_keybinds_button_down"]

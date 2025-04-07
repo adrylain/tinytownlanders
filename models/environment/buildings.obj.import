@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ck1savrcq84sr"
+path="res://.godot/imported/buildings.obj-3ae8c30d9e6fcbbe1d7868f492e65517.mesh"
+
+[deps]
+
+files=["res://.godot/imported/buildings.obj-3ae8c30d9e6fcbbe1d7868f492e65517.mesh"]
+
+source_file="res://models/environment/buildings.obj"
+dest_files=["res://.godot/imported/buildings.obj-3ae8c30d9e6fcbbe1d7868f492e65517.mesh", "res://.godot/imported/buildings.obj-3ae8c30d9e6fcbbe1d7868f492e65517.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

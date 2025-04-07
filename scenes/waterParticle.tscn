@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgf3nwnqq84rj"]
+
+[ext_resource type="ArrayMesh" uid="uid://di6sxhcndclmp" path="res://models/placeholders/waterParticle.tres" id="1_yljp7"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jqo4c"]
+emission_shape = 3
+emission_box_extents = Vector3(1, 0, 1)
+direction = Vector3(1, 0.5, 0)
+spread = 0.0
+initial_velocity_min = 3.0
+initial_velocity_max = 3.0
+gravity = Vector3(0, -2, 0)
+
+[node name="GPUParticles3D" type="GPUParticles3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 2, 0)
+amount = 1
+process_material = SubResource("ParticleProcessMaterial_jqo4c")
+draw_pass_1 = ExtResource("1_yljp7")
